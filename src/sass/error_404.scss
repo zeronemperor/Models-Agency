@@ -1,0 +1,97 @@
+// Sass files imported
+@import "./reset";
+@import "./layout";
+@import "./variables";
+@import "./responsive";
+// Sass files imported
+
+/*Header start*/
+header {
+  //Header section imported
+  @import "./components/header";
+  // Header section imported
+  .header-bottom {
+    color: var(--white);
+    background-color: var(--colorMain2);
+    padding: 20px 0;
+    .transition {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 5px;
+          padding: 10px;
+          background-color: var(--white);
+          transition: opacity 0.6s;
+          &:hover {
+            opacity: 0.6;
+          }
+          &:nth-child(3) {
+            background-color: var(--dark);
+            color: var(--white);
+          }
+        }
+      }
+    }
+    .register {
+      text-align: end;
+      i {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+/*Header end*/
+
+/*Main start*/
+main {
+  /*Agency start*/
+  #error_page {
+    background-color: var(--darkColor);
+    color: var(--white);
+    padding: 40px 0;
+    h2 {
+      font-size: 300px;
+      margin-top: 40px;
+      font-weight: lighter;
+    }
+    span {
+      color: var(--colorMain);
+      font-style: italic;
+      font-size: 30px;
+    }
+    h3 {
+      color: var(--fontColor);
+      margin: 20px 0;
+      font-weight: lighter;
+    }
+    input {
+      background-color: transparent;
+      width: 20%;
+      padding: 15px;
+      
+      border: 1px solid var(--fontColor)
+    }
+    i {
+      background-color: var(--colorMain);
+      padding: 15px;
+      margin-left: 5px
+
+    }
+  }
+  /*Agency end*/
+}
+
+/*Main end*/
+
+// Footer section imported
+@import "./components/footer";
+// Footer section imported

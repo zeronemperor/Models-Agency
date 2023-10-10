@@ -1,0 +1,142 @@
+// Sass files imported
+@import "./reset";
+@import "./layout";
+@import "./variables";
+@import "./responsive";
+// Sass files imported
+
+/*Header start*/
+header {
+  //Header section imported
+  @import "./components/header";
+  // Header section imported
+  .header-bottom {
+    color: var(--white);
+    background-color: var(--colorMain2);
+    padding: 20px 0;
+    .transition {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 5px;
+          padding: 10px;
+          background-color: var(--white);
+          transition: opacity 0.6s;
+          &:hover {
+            opacity: 0.6;
+          }
+          &:nth-child(3) {
+            background-color: var(--dark);
+            color: var(--white);
+          }
+        }
+      }
+    }
+    .register {
+      text-align: end;
+      i {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+/*Header end*/
+
+/*Main start*/
+main {
+  /*Prices start*/
+  #prices {
+    background-color: var(--darkColor);
+    padding: 100px 0;
+    .title {
+      color: var(--white);
+      h2 {
+        font-size: 50px;
+      }
+      span {
+        font-size: 20px;
+        color: var(--fontColor);
+        display: block;
+        margin: 10px 0;
+      }
+      p {
+        color: var(--fontColor);
+        margin-bottom: 100px;
+      }
+    }
+
+    .plan {
+      margin-right: 15px;
+      margin-bottom: 55px;
+      transition: box-shadow 0.6s;
+      &:hover {
+        box-shadow: 0px 0px 19px 0px var(--colorMain);
+      }
+
+      .plan_name {
+        background-color: var(--white);
+        padding: 20px 0;
+        margin-top: 20px;
+      }
+      .plan_price {
+        background-color: var(--colorMain);
+        color: var(--white);
+        span {
+          color: var(--white);
+          font-size: 60px;
+          .plan_sign {
+            color: var(--dark);
+          }
+        }
+      }
+      .plan_feautures {
+        padding: 30px 70px;
+        background-color: var(--dark);
+        color: var(--fontColor);
+        ul {
+          li {
+            transition: border, color 0.6s;
+            border-bottom: 1px solid var(--fontColor);
+            padding: 10px 0;
+            &:hover {
+              color: var(--colorMain);
+              border-bottom: 1px solid var(--white);
+            }
+          }
+        }
+        a {
+          display: inline-block;
+          margin-top: 20px;
+          border: 1px solid var(--white);
+          color: var(--white);
+          padding: 10px 50px;
+          transition: background-color, color 0.6s;
+          &:hover {
+            background-color: var(--colorMain);
+            color: var(--dark);
+          }
+        }
+      }
+      h5 {
+        font-size: 20px;
+        color: var(--white);
+      }
+    }
+  }
+}
+/*Prices end*/
+
+/*Main end*/
+
+// Footer section imported
+@import "./components/footer";
+// Footer section imported

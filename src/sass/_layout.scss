@@ -1,0 +1,39 @@
+/*Layout start*/
+::selection {
+  background-color: violet;
+  color: #fff;
+}
+.container {
+  width: 85%;
+  margin: auto;
+}
+.row {
+  display: flex;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+.container-fluid {
+  width: 100%;
+  margin: auto;
+}
+/*Layout end*/

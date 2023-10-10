@@ -1,0 +1,217 @@
+// Sass files imported
+@import "./reset";
+@import "./layout";
+@import "./variables";
+@import "./responsive";
+// Sass files imported
+
+/*Header start*/
+header {
+  //Header section imported
+  @import "./components/header";
+  // Header section imported
+  .header-bottom {
+    color: var(--white);
+    background-color: var(--colorMain2);
+    padding: 20px 0;
+    .transition {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 5px;
+          padding: 10px;
+          background-color: var(--white);
+          transition: opacity 0.6s;
+          &:hover {
+            opacity: 0.6;
+          }
+          &:nth-child(3) {
+            background-color: var(--dark);
+            color: var(--white);
+          }
+        }
+      }
+    }
+    .register {
+      text-align: end;
+      i {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+/*Header end*/
+
+/*Main start*/
+main {
+  /*Events start*/
+  #events {
+    background-color: var(--darkColor);
+    padding: 50px 0;
+    .item {
+      background-color: var(--dark);
+      margin-bottom: 50px;
+      color: #fff;
+      .content {
+        padding: 40px;
+        h2 {
+          cursor: pointer;
+          font-size: 40px;
+          font-weight: lighter;
+          transition: color 0.6s;
+          &:hover {
+            color: var(--colorMain);
+          }
+          margin-bottom: 20px;
+        }
+        i {
+          background-color: var(--white);
+          padding: 10px;
+          color: var(--dark);
+          &:nth-child(2) {
+            color: var(--colorMain);
+            background-color: var(--darkColor);
+          }
+        }
+        span {
+          &:nth-child(4) {
+            float: right;
+            background-color: var(--colorMain);
+            padding: 10px;
+          }
+        }
+        p {
+          color: var(--fontColor);
+          margin: 20px 0;
+        }
+        ul {
+          list-style: circle;
+        }
+        li {
+          color: var(--fontColor);
+          margin: 0 10px 10px 15px;
+          list-style: circle;
+        }
+        margin-bottom: 10px;
+      }
+    }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .wrapper {
+      margin-top: 50px;
+      padding: 20px;
+      h3 {
+        font-size: 30px;
+        font-weight: lighter;
+        margin-bottom: 10px;
+      }
+      .search {
+        align-items: center;
+        background-color: var(--dark);
+        padding: 20px;
+        color: var(--white);
+
+        input {
+          border: 1px solid var(--fontColor);
+          color: var(--fontColor);
+          background-color: var(--dark);
+          padding: 10px;
+        }
+        i {
+          background-color: var(--colorMain);
+          padding: 10px;
+          color: var(--white);
+          &:hover {
+            color: var(--dark);
+          }
+        }
+      }
+      .categories {
+        background-color: var(--dark);
+        padding: 20px;
+        color: var(--white);
+
+        ul {
+          li {
+            text-align: start;
+            cursor: pointer;
+            padding: 10px 0;
+            &:hover a {
+              color: var(--white);
+            }
+            a {
+              transition: color 0.6s;
+              color: var(--colorMain);
+            }
+            border-top: 0.15px solid var(--fontColor);
+            border-bottom: 0.5px solid var(--fontColor);
+
+            span {
+              float: right;
+            }
+          }
+        }
+      }
+      .ad {
+        padding: 20px;
+        background-color: var(--dark);
+        h3 {
+          font-size: 30px;
+          font-weight: lighter;
+          margin-bottom: 10px;
+          color: var(--white);
+        }
+      }
+      .tags {
+        padding: 20px;
+        background-color: var(--dark);
+        h3 {
+          font-size: 30px;
+          font-weight: lighter;
+          margin-bottom: 10px;
+          color: var(--white);
+        }
+        a {
+          text-align: center;
+          display: inline-block;
+          width: 46%;
+          color: var(--white);
+          padding: 10px 15px;
+          border: 1px solid var(--fontColor);
+          margin: 0 5px 15px 0;
+          transition: color 0.6s;
+          &:hover {
+            color: var(--colorMain);
+          }
+        }
+      }
+      .instagram {
+        img {
+          cursor: pointer;
+          width: 100px;
+          height: 100px;
+          margin: 0 10px 5px 10px;
+          transition: opacity 0.6s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    /*Events end*/
+  }
+  /*Main end*/
+}
+// Footer section imported
+@import "./components/footer";
+// Footer section imported

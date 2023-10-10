@@ -1,0 +1,364 @@
+// Sass files imported
+@import "./reset";
+@import "./layout";
+@import "./variables";
+@import "./responsive";
+// Sass files imported
+
+/*Header start*/
+header {
+  //Header section imported
+  @import "./components/header";
+  // Header section imported
+  .content {
+    .models {
+      position: relative;
+      overflow: hidden;
+      height: 450px;
+      transition: transform 0.6s;
+      cursor: pointer;
+      &:hover > .model-info {
+        transform: translateY(0);
+        visibility: visible;
+      }
+      .model-info {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: var(--colorMain);
+        color: #fff;
+        opacity: 0.6;
+        padding: 50px 0;
+        transform: translateY(260px);
+        transition: transform 0.5s;
+        visibility: hidden;
+        span {
+          display: block;
+        }
+        ul {
+          margin: 20px 0;
+          li {
+            text-align: center;
+            margin-right: 10px;
+          }
+        }
+        h2 {
+          font-size: 40px;
+          transition: color 0.5s;
+          &:hover {
+            color: var(--dark);
+          }
+        }
+      }
+    }
+  }
+}
+/*Header end*/
+
+/*Main start*/
+main {
+  /*Agency start*/
+  #agency {
+    background-color: var(--darkColor);
+    padding: 100px 0;
+    color: var(--white);
+    h2 {
+      font-size: 70px;
+      margin-top: 40px;
+    }
+    span {
+      background-color: var(--colorMain);
+      font-style: italic;
+      font-size: 25px;
+    }
+    p {
+      font-size: 20px;
+      margin: 40px 0;
+      color: var(--fontColor);
+    }
+    .banner {
+      position: relative;
+      &:hover::before {
+        opacity: 0.4;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: var(--colorMain);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.6s;
+      }
+    }
+    .teams {
+      justify-content: center;
+      align-items: center;
+      .team {
+        width: 100px;
+        border-radius: 50%;
+      }
+      h5 {
+        color: var(--fontColor);
+      }
+    }
+  }
+  /*Agency end*/
+
+  /*Models start*/
+  #models {
+    background-color: var(--darkColor);
+    padding: 40px 0;
+    .model {
+      cursor: pointer;
+      position: relative;
+      transition: display, opacity 0.6;
+      margin: 7px;
+      &:hover::before {
+        visibility: visible;
+        opacity: 0.6;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: var(--colorMain);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.6s;
+      }
+    }
+    h2 {
+      color: var(--white);
+      padding: 10px 0;
+    }
+  }
+  /*Models end*/
+
+  /*About start*/
+  #about {
+    background-image: url(../images/section-background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--white);
+    height: 500px;
+    .content {
+      h2 {
+        font-size: 50px;
+      }
+      h3 {
+        font-size: 20px;
+        font-style: italic;
+        color: var(--colorMain);
+      }
+
+      .item {
+        img {
+          margin-right: 10px;
+          float: left;
+        }
+        h4 {
+          font-size: 20px;
+          margin: 15px 0;
+        }
+        p {
+          color: var(--fontColor);
+        }
+      }
+    }
+  }
+  /*About end*/
+
+  /*Question start*/
+  #question {
+    background-image: url(../images/Depositphotos_38755349_original.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 200px 0;
+    position: relative;
+    color: var(--white);
+    z-index: -1;
+    &::before {
+      content: "";
+      background-color: var(--dark);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+    h2 {
+      font-size: 50px;
+      span {
+        color: var(--colorMain);
+      }
+    }
+    p {
+      font-size: 25px;
+      margin: 35px 0;
+    }
+    input {
+      background-color: var(--dark);
+      padding: 15px;
+      border: none;
+      font-style: italic;
+    }
+    i {
+      background-color: var(--colorMain);
+      padding: 14px;
+      cursor: pointer;
+    }
+  }
+  /*Question end*/
+
+  /*Top models start */
+  #top-models {
+    background-color: var(--darkColor);
+    color: var(--white);
+    padding: 100px 0;
+    h4 {
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 25px;
+      font-style: italic;
+      color: var(--colorMain);
+      margin-bottom: 25px;
+    }
+    .model {
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      height: 450px;
+      &:hover > .model-info {
+        transform: translateX(0);
+        visibility: visible;
+      }
+      .model-info {
+        position: absolute;
+        background-color: var(--colorMain);
+        top: 0;
+        width: 60%;
+        height: 100%;
+        text-align: start;
+        padding: 60px 0 60px 50px;
+        transform: translateX(-225px);
+        transition: transform 0.6s;
+        overflow: hidden;
+        opacity: 0.6;
+        visibility: hidden;
+        h2 {
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            font-size: 20px;
+            margin-bottom: 15px;
+            i {
+              background-color: var(--white);
+              color: var(--dark);
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*Top models end*/
+
+  /*Beautify start*/
+  #beautify {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 70px 0;
+
+    .item {
+      margin: 15px;
+      cursor: pointer;
+      overflow: hidden;
+      img {
+        height: 200px;
+        transition: transform 0.6s;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      span {
+        color: var(--colorMain);
+        padding: 25px 0;
+      }
+      &:hover {
+        .content {
+          background-color: var(--white);
+
+          h2 {
+            color: var(--dark);
+          }
+        }
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .content {
+        transition: background-color 0.6s;
+        padding: 10px;
+        p {
+          color: var(--fontColor);
+          margin-top: 10px;
+        }
+        .social-links {
+          text-align: center;
+          margin: 10px 0;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  /*Beutify end*/
+
+  /*Contact start*/
+  #contact {
+    background-color: var(--darkColor);
+    padding: 100px;
+    color: var(--white);
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 25px;
+      color: var(--colorMain);
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 15px;
+      width: 50%;
+      font-style: italic;
+      margin-bottom: 20px;
+      border: 1px solid var(--fontColor);
+      color: var(--fontColor);
+    }
+    a {
+      background-color: var(--colorMain);
+      padding: 15px 40px;
+      transition: background-color 0.6s;
+      margin-top: 15px;
+      color: var(--white);
+      &:hover {
+        background-color: var(--dark);
+      }
+    }
+  }
+
+  /*Contact end*/
+}
+
+/*Main end*/
+
+// Footer section imported
+@import "./components/footer";
+// Footer section imported
